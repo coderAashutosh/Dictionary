@@ -36,9 +36,9 @@ function data(result, word) {
         } else {
             antonyms.parentElement.style.display = "block";
             antonyms.innerHTML = "";
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 3; i++) {
                 let tag = `<span onclick="search('${definitions.antonyms[i]}')">${definitions.antonyms[i]},</span>`;
-                tag = i == 4 ? tag = `<span onclick="search('${definitions.antonyms[i]}')">${definitions.antonyms[4]}</span>` : tag;
+                tag = i == 2 ? tag = `<span onclick="search('${definitions.antonyms[i]}')">${definitions.antonyms[2]}</span>` : tag;
                 antonyms.insertAdjacentHTML("beforeend", tag);
             }
         }
